@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
     <center>
-        <form action="respuesta.Html">
+        <form 
+        class="form_container"
+        action="respuesta.Html"
+        method="get"
+        target="_blank"
+        >
             <div>
                 <h2>Formulario para Usuario</h2>
             </div>
             <div>
-                <label>Ingresa tu nombre</label>
-                <input type="text">
+                <label for="nombre">Ingresa tu nombre</label>
+                <input type="text" name="nombre">
             </div>
             <div>
-                <label>Ingresa tu cédula</label>
-                <input type="text">
+                <label for="cedula">Ingresa tu cédula</label>
+                <input type="text" name="cedula">
             </div>
             <div>
-                <input type="submit">
+                <input type="submit" name="enviar">
             </div>
         </form>
     </center>
